@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h1>Connect to Play</h1>
+      <hr>
+      <div class="mb-3">
+        <div>
+          <button class="btn btn-primary" id="submit" onclick="login();">Connect MetaMask</button>
+        </div>
+        <hr>
+        <div class="form-group">
+          <div class="input-group mb-3">
+            <input disabled="true" id="storeNumber" type="text" class="form-control" placeholder="Input number to store"
+              aria-label="numberInput" aria-describedby="basic-addon1">
+          </div>
+          <div>
+            <button disabled="true" class="btn btn-primary" id="storeButton" onclick="store();">store</button>
+          </div>
+          <div>
+            <button disabled="true" class="btn btn-primary" id="retrieveButton" onclick="retrieve();">retrieve</button>
+          </div>
+          <hr>
+          <div class="input-group mb-3">
+            <input disabled="true" id="retrieveData" type="text" class="form-control" placeholder="retrieve data"
+              aria-label="Email" aria-describedby="basic-addon1">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://unpkg.com/web3@latest/dist/web3.min.js"></script>
+<script src="https://unpkg.com/moralis/dist/moralis.js"></script>
+<script src="{{ url_for('static', filename='js/logic.js') }}"></script>
