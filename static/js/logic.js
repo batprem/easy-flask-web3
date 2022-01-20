@@ -154,6 +154,7 @@ async function retrieve() {
 
 async function store() {
     const value = document.getElementById("storeNumber").value;
+    // SampleStorage.methods.store(value).send({ from: await web3.eth.currentProvider.selectedAddress, value: 0.001e18 })
     await SampleStorage.methods.store(value).send({ from: await web3.eth.currentProvider.selectedAddress });
 }
 // SampleStorage.methods.store(18).send({from: accounts[0]})
