@@ -1,0 +1,16 @@
+{
+  "name": "easy-flask-web3",
+  "version": "0.1.0",
+  "description": "Create Web3 for any dom",
+  "main": "index.js",
+  "repository": "https://github.com/batprem/easy-flask-web3",
+  "author": "Prem",
+  "license": "MIT",
+  "devDependencies": {
+    "ganache": "^7.0.2",
+    "ganache-cli": "^6.12.2"
+  },
+  "dependencies": {
+    "yarn.lock": "0.0.1-security"
+  }
+}
